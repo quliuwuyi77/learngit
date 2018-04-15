@@ -1,0 +1,10 @@
+检出xiangqd项目,并import入其子包
+
+在仓库中下载好了两个文件jar,现在放在了C:\Users\donglei\.m2\repository
+在两个文件jar所在目录下运行cmd 并输入以下命令进行安装
+mvn install:install-file -Dfile=api-20160719100640.jar -DgroupId=com.antgroup.zmxy.openplatform -DartifactId=api -Dversion=20160719100640 -Dpackaging=jar
+
+mvn install:install-file -Dfile=bsApi-2.5.0-shaded.jar -DgroupId=com.100credit.compass -DartifactId=bsApi -Dversion=2.5.0-shaded -Dpackaging=jar
+
+检出svn://182.92.168.85/ubicash/trunk/ubicash_V3/WEB/MintQEncrypt
+并该项目的根目录下运行mvn clean compile package install -Dmaven.test.skip=true
